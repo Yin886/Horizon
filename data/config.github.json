@@ -11,7 +11,24 @@
       "en"
     ],
     "analysis_concurrency": 1,
-    "enrichment_concurrency": 1
+    "enrichment_concurrency": 1,
+    "providers": [
+      {
+        "type": "openai",
+        "api_key_env": "GOOGLE_API_KEY",
+        "model": "gemini-3.1-flash-lite"
+      },
+      {
+        "type": "openai",
+        "api_key_env": "GOOGLE_API_KEY",
+        "model": "gemini-3.6-flash"
+      },
+      {
+        "type": "openai",
+        "api_key_env": "GOOGLE_API_KEY",
+        "model": "gemini-3.8-flash"
+      }
+    ]
   },
   "processing": {
     "profiles_dir": "profiles",
